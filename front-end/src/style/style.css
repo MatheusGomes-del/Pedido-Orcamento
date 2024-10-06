@@ -1,0 +1,817 @@
+/* TELA DE CONSULTA DE PEDIDOS */ 
+
+
+@media screen and (min-width: 1341px) {
+    * {
+        font-family: 'Times New Roman', Times, serif;
+        color: rgba(0, 0, 0, 0.863);
+    }
+    
+    .label-pedido {
+        font-size: 200%;
+    }
+    
+    .box {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    
+        width: 100%;
+        height: 100%;
+    }
+    
+    .divPedido {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+    
+        margin-left: 5px;
+        width: 45%;
+        height: 700px;
+        
+        border-radius: 10px;
+        border-style: none;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.233);
+        background-color: rgba(255, 255, 255, 0.987);
+          
+    }
+    
+    .formPedido {
+        display: flex;
+        flex-direction: column;
+    
+        justify-content: center;
+        align-items: center;
+    
+    }
+    
+    
+    .select-opcoes {
+        font-size: large;
+        margin: 5%;
+        width: 130%;
+        height: 50px;
+        text-align: center;
+    
+        border-radius: 20px ;
+        border-style: hidden;
+        box-shadow: 1px 1px 1px #0000005b;
+        background-color: aliceblue;
+    }
+    
+    .input {
+        margin: 5%;
+        width: 130%;
+        height: 50px;
+        text-align: center;
+    
+        border-radius: 20px ;
+        border-style: hidden;
+        background-color: aliceblue;
+        box-shadow: 1px 1px 1px #0000005b;
+    }
+    
+    .btn {
+        font-size: 24px;
+        width: 200px;
+        height: 50px;
+        margin-bottom: 15px;
+        padding: 5px;
+    
+        border-radius: 10px;
+        border-style: none;
+    
+        color: rgb(3, 4, 4);
+        background-color: #ffc107
+    }
+    
+    .btn:hover {
+        background-color: rgba(0, 0, 0, 0.233);
+    }
+    
+    ::placeholder {
+        color: rgb(7, 7, 7);
+        font-size: 20px;
+    }
+    
+    .logo {
+        width: 50%;
+        height: 40%;
+        
+    }
+    
+    /* TELA DE PEDIDOS */ 
+    
+    .boxPedidos {
+    
+        display: flex;
+        flex-direction: column;
+        
+        margin-left: 20px;
+        margin-right: 15px;
+        width: 60%;
+        height: 750px;
+        
+        border-style: none;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.233);
+        background-color: rgba(255, 255, 255, 0.987); 
+    }
+    
+    .cardsPedidos {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 5px;
+    
+        width: 100%;
+        height: 18%;
+        
+        border-radius: 10px;
+        border-style: none;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.233);
+        background-color: rgba(255, 255, 255, 0.987);
+    }
+    
+    .text-pedidos {
+        color: #000000;
+    }
+    
+    table {
+        border-collapse: collapse;
+        margin-top: 20px;
+        width: 600px;
+    }
+
+    table, th, td {
+        font-size: large;
+        margin-bottom: 5px;
+        border: 1px solid #ddd;
+    }
+
+    th, td {
+        padding: 3px;
+        text-align: center;
+    }
+
+    th {
+        background: #007bff;
+        color: #fff;
+    }
+    
+    
+    
+/* POPUP */ 
+    
+    .modal {
+       display: flex;
+       flex-direction: column; 
+    }
+    
+    .actions {
+        align-self: center;
+    }
+    
+    .content {
+        justify-self: center;
+        align-self: center;
+    }
+    
+    .popup-content {
+            background: rgb(246, 241, 241);
+            width: 50%;
+            padding: 5px;
+    
+    
+            border-radius: 10px;
+            border-style: none;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.233);
+            background-color: rgba(255, 255, 255, 0.987);
+    }
+    
+    [role='tooltip'].popup-content {
+        width: 200px;
+        box-shadow: rgba(0, 0, 0, 0.16) 0px 0px 3px;
+    }
+    
+    .button-popup {
+        
+        width: 100px;
+        margin-left: 3px;
+        margin-top: 10px;
+        margin-right: 10px;
+        border: 2px solid #ffc107;
+        color: black;
+        border: 2px solid rgb(217, 183, 183);
+        background-color: #ffc107; 
+    }
+    
+    .button-print {
+        width: 100px;
+        margin-top: 10px;
+        margin-right: 10px;
+        border: 2px solid #ffc107;
+        color: black;
+        border: 2px solid rgb(217, 183, 183);
+        background-color: #ffc107;
+       
+    }
+    
+    
+    .button-close {
+        align-self: flex-end;
+        width: 10%;
+        background-color: rgb(244, 23, 23);
+    }
+}
+
+
+/* TELA ADAPTADA PARA TABLETS */
+
+@media screen and (max-width: 1340px ) {
+    
+    * {
+        font-family: 'Times New Roman', Times, serif;
+        color: black;
+    }
+
+    .box {
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    .label-pedido {
+        font-size: larger;
+    }
+ 
+    .divPedido {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        width: 90%;
+        max-width: 1200px;
+        margin: 20px auto;
+        background:  rgba(255, 255, 255, 0.987);
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);       
+    }
+
+    .formPedido {
+        display: flex;
+        flex-direction: row;
+    
+        justify-content: space-around;
+        align-items: center;
+
+        width: 100%;
+        height: 100px;
+    }
+    
+    .select-opcoes {
+        font-size: large;
+
+        width: 25%;
+        height: 30px;
+        
+        border-radius: 5px;
+        border-style: solid;
+        color: black;
+        background-color: rgb(222, 239, 252);
+    }
+
+    .input {
+        width: 40%;
+        height: 30px;
+        
+        border-radius: 2px;
+        border-style: solid;
+        color: #000000;
+        background-color: white;
+    }
+
+    .btn {
+        font-size: large;
+        width: 100%;
+        height: 30px;
+        
+
+        border-style: solid;
+        color: black;
+        background-color: #ffc107;
+    }
+
+    .btn:active {
+       background-color: #896805;
+    }
+
+    .logo {
+        width: 30%;
+        height: 160px;
+    }
+
+    .text {
+        font-family: Arial, Helvetica, sans-serif;
+        color: aliceblue;
+        
+    }
+ 
+    ::placeholder {
+        color: #000000;
+        font-size: 20px;
+    }
+        
+    .boxPedidos {
+
+        display: flex;
+        flex-direction: column;
+        width: auto;
+        height: auto;
+        
+        border-style: none;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.233);
+        background-color: rgba(255, 255, 255, 0.987);
+    }
+
+    .cardsPedidos {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-content: center;
+
+        width: 100%;
+        height: auto;
+        
+        border-style: none;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.233);
+        background-color: rgba(255, 255, 255, 0.987);
+    }
+
+    .text-pedidos {
+        color: #000000;
+    }
+ 
+    table {
+        border-collapse: collapse;
+        margin-top: 20px;
+        width: 600px;
+    }
+
+    table, th, td {
+        font-size: large;
+        margin-bottom: 5px;
+        border: 1px solid #ddd;
+    }
+
+    th, td {
+        padding: 3px;
+        text-align: center;
+    }
+
+    th {
+        background: #007bff;
+        color: #fff;
+    }
+
+    .th-pedido {
+        background: #ed3d22;
+        color: #fff;
+    }
+    
+    .th-orcamento {
+        background: #ffc107;
+        color: #fff;
+    }
+
+    .modal {
+        height: 150px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+     }
+     
+     .actions {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+        
+        width: 350px;
+
+
+        align-self: center;
+     }
+     
+     .content {
+        font-size: large;
+        justify-self: center;
+        align-self: center;
+     }
+     
+     .popup-content {
+             background: rgb(246, 241, 241);
+             width: 50%;
+             height: 150px;
+             padding: 5px;
+     
+     
+             border-radius: 10px;
+             border-style: none;
+             box-shadow: 0 0 10px rgba(0, 0, 0, 0.233);
+             background-color: rgba(255, 255, 255, 0.987);
+     }
+     
+     [role='tooltip'].popup-content {
+         width: 200px;
+         box-shadow: rgba(0, 0, 0, 0.16) 0px 0px 3px;
+     }
+     
+     .button-popup {
+         
+         color: black;
+         background-color:   rgba(10, 140, 247, 0.575);
+     }
+
+     .button-popup:hover {
+         
+        color: black;
+        background-color:   rgba(5, 76, 134, 0.985);
+    }
+     
+     .button-popup:active {
+        background-color: #725704;
+     }
+
+     .button-print {
+         width: 100px;
+         height: 30px;
+         color: black;
+         border: none;
+         background-color: #ffc107;
+        
+     }
+
+     .button-print:active {
+        background-color: #725704;
+     }
+
+     .button-cancelar {
+        width: 100px;
+        height: 30px;
+        border-style: none;
+        background-color: rgba(244, 23, 23, 0.85);
+     }
+
+     .button-cancelar:active {
+        background-color: rgb(188, 2, 2);
+     }
+     
+     .button-close {
+         align-self: flex-end;
+         width: 10%;
+         background-color: rgb(244, 23, 23);
+     }
+
+
+     .card-legenda {
+        margin: 5px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+
+
+        
+        width: 50%;
+        height: 30px;
+     }
+
+     .ball-pedido {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        width: 20px;
+        height: 20px;
+        border: 1px solid black;
+        background-color: #ed3d22;
+     }
+
+     .ball-pedido:active {
+        background-color: #611105
+     }
+
+    .ball-orcamento {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        width: 20px;
+        height: 20px;
+        border: 1px solid black;
+        background-color: #ffc107;
+    }
+
+    .ball-orcamento:active {
+        background-color: #ac8203;
+    }
+
+}
+
+/* TELA PARA CELULAR */ 
+
+@media screen and (max-width: 740px) {
+    * {
+        font-family: 'Times New Roman', Times, serif;
+        color: black;
+    }
+
+    .box {
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+
+    .label-pedido {
+        font-size: larger;
+    }
+
+    
+    .divPedido {
+
+        width: 100%;
+        max-width: 700px;
+        background:  rgba(255, 255, 255, 0.987);
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);       
+    }
+
+
+    .formPedido {
+        display: flex;
+        flex-direction: row;
+    
+        justify-content: space-around;
+        align-items: center;
+
+        width: 100%;
+        height: 100px;
+    }
+    
+    .select-opcoes {
+        font-size: large;
+
+        width: 25%;
+        height: 30px;
+        
+        border-radius: 5px;
+        border-style: solid;
+        color: black;
+        background-color: rgb(222, 239, 252);
+    }
+
+    .input {
+        width: 40%;
+        height: 30px;
+        
+        border-radius: 2px;
+        border-style: solid;
+        color: #000000;
+        background-color: white;
+    }
+
+    .btn {
+        font-size: large;
+        width: 100%;
+        height: 30px;
+        
+
+        border: none;
+        color: black;
+        background-color: #ffc107;
+    }
+
+    .btn:active {
+       background-color: #896805;
+    }
+
+    .logo {
+        width: 30%;
+        height: 160px;
+    }
+
+    .text {
+        font-family: Arial, Helvetica, sans-serif;
+        color: aliceblue;
+        
+    }
+    
+    ::placeholder {
+        color: #000000;
+        font-size: 20px;
+    }
+        
+    .boxPedidos {
+
+        display: flex;
+        flex-direction: column;
+        width: 380px;
+        height: auto;
+        
+        border-style: none;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.233);
+        background-color: rgba(255, 255, 255, 0.987);
+    }
+
+    .cardsPedidos {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-content: center;
+
+        width: 100%;
+        height: auto;
+        
+        border-style: none;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.233);
+        background-color: rgba(255, 255, 255, 0.987);
+    }
+
+    .text-pedidos {
+        color: #000000;
+    }
+ 
+    table {
+        border-collapse: collapse;
+        margin-top: 20px;
+        width: 100%;
+    }
+
+    table, th, td {
+        font-size: small;
+        margin-bottom: 5px;
+        border: 1px solid #ddd;
+    }
+
+    th, td {
+        padding: 3px;
+        text-align: center;
+    }
+
+    th {
+        background: #007bff;
+        color: #fff;
+    }
+
+    .th-pedido {
+        background: #ed3d22;
+        color: #fff;
+    }
+    
+    .th-orcamento {
+        background: #ffc107;
+        color: #fff;
+    }
+
+    .modal {
+        height: 150px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+     }
+     
+    .actions {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+        
+        width: 350px;
+
+
+        align-self: center;
+     }
+     
+    .content {
+        font-size: large;
+        justify-self: center;
+        align-self: center;
+     }
+     
+    .popup-content {
+        background: rgb(246, 241, 241);
+        width: 70%;
+        height: 150px;
+        padding: 5px;
+
+
+        border-radius: 10px;
+        border-style: none;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.233);
+        background-color: rgba(255, 255, 255, 0.987);
+     }
+     
+    [role='tooltip'].popup-content {
+         width: 200px;
+         box-shadow: rgba(0, 0, 0, 0.16) 0px 0px 3px;
+     }
+     
+    .button-popup {
+         border: none;
+         color: black;
+         background-color:   rgba(10, 140, 247, 0.575);
+     }
+
+    .button-popup:hover {
+         
+        color: black;
+        background-color:   rgba(5, 76, 134, 0.985);
+    }
+     
+    .button-popup:active {
+        background-color: #725704;
+    }
+
+    .button-print {
+         width: 100px;
+         height: 30px;
+
+         border: 2px solid #ffc107;
+         color: black;
+         background-color: #ffc107;
+        
+    }
+
+    .button-print:active {
+        background-color: #725704;
+    }
+
+    .button-cancelar {
+        width: 100px;
+        height: 30px;
+        border-style: none;
+        background-color: rgba(244, 23, 23, 0.85);
+    }
+
+    .button-cancelar:active {
+        background-color: rgb(188, 2, 2);
+    }
+      
+    .button-close {
+         align-self: flex-end;
+         width: 10%;
+         background-color: rgb(244, 23, 23);
+    }
+
+    .card-legenda {
+        margin: 5px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+
+
+        
+        width: 50%;
+        height: 30px;
+    }
+
+    .ball-pedido {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        width: 20px;
+        height: 20px;
+        border: 1px solid black;
+        background-color: #ed3d22;
+    }
+
+    .ball-pedido:active {
+        background-color: #611105
+    }
+
+    .ball-orcamento {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        width: 20px;
+        height: 20px;
+        border: 1px solid black;
+        background-color: #ffc107;
+    }
+}
