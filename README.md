@@ -15,7 +15,7 @@ do pedido/orçamento.
 
 Este projeto foi desenvolvido para resolver um problema comum enfrentado por vendedores durante o processo de montagem de pedidos. Anteriormente, havia dificuldades na impressão de notas fiscais que detalhavam os itens dos pedidos realizados pelos clientes no momento da compra. Com este sistema, os vendedores agora têm uma solução ágil e eficiente para gerar notas fiscais que exibem claramente todos os itens dos pedidos e orçamentos.
 
-https://github.com/MatheusGomes-del/Pedido-Orcamento/blob/main/2024-10-05%2023-43-29.mp4
+![Demonstração](./front-end/src/assets/2024-10-05%2023-43-29.mp4)
 
 ## Funcionalidades Principais:
   ### Busca Rápida de Pedidos: Os vendedores podem facilmente localizar pedidos ou orçamentos anteriores, garantindo que as     informações estejam sempre à mão. <br>
