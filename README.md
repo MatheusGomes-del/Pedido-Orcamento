@@ -29,7 +29,7 @@ Este projeto foi desenvolvido para resolver um problema comum enfrentado por ven
 - Redux
 - Bootstrap
 - Node.js
-- Express
+- Express (API)
 - MySQL
 - <a href="https://www.npmjs.com/package/react-to-print">react-to-print</a>
 - <a href="https://www.npmjs.com/package/reactjs-popup">reactjs-popup</a>
