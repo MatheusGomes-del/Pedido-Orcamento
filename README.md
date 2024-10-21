@@ -48,14 +48,24 @@ Instruções para instalação e configuração do projeto:
 3. **Crie variáveis globais em um arquivo .env e coloque no arquivo abaixo para conectar com seu Banco de Dados:**
    ```bash
    /models/connection
-    
-4. **Na pasta Front-end, ative a Aplicação**
+
+4. **Na pasta Front-end, instale as dependências da pasta front-end**
+   ```bash
+   npm install
+   
+5. **Na pasta Front-end, ative a Aplicação**
    ```bash
    npm run dev
-5. **Na pasta Back-end, ative a API**
+
+6. **Na pasta Back-end, instale as dependências**
+   ```bash
+   npm install
+
+7. **Na pasta Back-end, ative a API**
    ```bash
    npm run dev
-6. **Pesquise na aplicação informações fictícias de acordo com o que foi registrado no arquivo de exemplo do Banco de Dados**
+   
+8. **Pesquise na aplicação informações fictícias de acordo com o que foi registrado no arquivo de exemplo do Banco de Dados**
    ```bash
    ex: codigoCliente: 1; nomeCliente: MARCOS RODRIGO DA SILVA...
 ## Futuras Implementações
