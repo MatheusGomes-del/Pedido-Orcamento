@@ -5,7 +5,8 @@
   "main": "./src/api/server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "nodemon ."
+    "dev": "nodemon .",
+    "test": "mocha test/**/*.test.js --exit"
   },
   "author": "",
   "license": "ISC",
