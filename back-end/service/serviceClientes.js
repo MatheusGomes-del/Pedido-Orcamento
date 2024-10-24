@@ -1,6 +1,5 @@
 const modelClientes = require('../models/modelClientes');
 
-
 const buscaClientes = async (req, res) => {
   const clientes = await modelClientes.buscaClientes();
 

@@ -3,10 +3,10 @@
   "version": "1.0.0",
   "description": "",
   "main": "./src/api/server.js",
+  "type": "commonjs",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "nodemon .",
-    "test": "mocha test/**/*.test.js --exit"
+    "test": "mocha test/**/*.test.js --exit",
+    "dev": "nodemon ."
   },
   "author": "",
   "license": "ISC",
@@ -18,8 +18,9 @@
     "mysql2": "^3.11.3"
   },
   "devDependencies": {
-    "chai": "^5.1.1",
-    "chai-http": "^5.0.0",
+    "@types/chai-http": "^4.2.4",
+    "chai": "^4.3.0",
+    "chai-http": "^0.2.0",
     "mocha": "^10.7.3",
     "nodemon": "^3.1.7",
     "sinon": "^19.0.2"
