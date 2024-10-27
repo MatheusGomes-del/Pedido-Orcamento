@@ -11,7 +11,7 @@ app.use(express.json());
 app.use(express.static('public'));
 app.use(cors())
 
-app.get('/', (_req, res) => res.send('pegou'))
+app.get('/', (_req, res) => res.send('pegou')) // teste
 app.get('/clientes', serviceClientes.buscaClientes);
 
 app.post('/pedidos', servicePedidos.buscaPedidosPorFlag);

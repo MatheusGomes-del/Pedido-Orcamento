@@ -16,18 +16,18 @@ const buscaPedidos = async () => {
 }
 
 const buscaPedidosPorNomeCliente = async (busca) => {
-    try {
-        const QUERY = `SELECT * FROM DB_PO.pedidos WHERE nomeCliente = ? `;
-        const [ resultado ] = await connection.execute(QUERY, [busca.trim()])
+  try {
+      const QUERY = `SELECT * FROM DB_PO.pedidos WHERE nomeCliente = ? `;
+      const [ resultado ] = await connection.execute(QUERY, [busca.trim()])
 
-        if (!resultado) {
-          throw new Error('não foi possível encontrar o pedido');
-        }
-  
-        return resultado
-     } catch (error) {
-       return error.message
-     }
+      if (!resultado) {
+        throw new Error('não foi possível encontrar o pedido');
+      }
+
+      return resultado
+   } catch (error) {
+     return error.message
+   }
 }
 
 const buscaPedidosPorFlag = async (flagPedido, busca) => {

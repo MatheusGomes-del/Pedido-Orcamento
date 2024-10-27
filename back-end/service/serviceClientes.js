@@ -11,5 +11,5 @@ const buscaClientes = async (req, res) => {
 }
 
 module.exports = {
-    buscaClientes
+    buscaClientes,
 }

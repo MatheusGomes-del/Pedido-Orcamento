@@ -14,13 +14,13 @@ const buscaPedidos = async (req, res) => {
 const buscaPedidosPorNomeCliente = async (req, res) => {
     const { busca } = req.body;
     const pedido = await modelPedidos.buscaPedidosPorNomeCliente(busca);
-
+  
     if(!pedido) {
-        return res.status(404).json('não encontrou nenhum pedido')
+        return res.status(404).json('não encontrou nenhum pedido');
     }
-
-    return res.status(200).json(pedido)
-}
+  
+    return res.status(200).json(pedido);
+  }
 
 const buscaPedidosPorFlag = async (req, res) => {
     const { flagPedido, busca } = req.body;
