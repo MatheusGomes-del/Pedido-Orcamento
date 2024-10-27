@@ -70,6 +70,6 @@ Instruções para instalação e configuração do projeto:
    ex: codigoCliente: 1; nomeCliente: MARCOS RODRIGO DA SILVA...
 ## Futuras Implementações
 
--Testes Automatizados <br>
+-Testes Automatizados (EM ANDAMENTO) <br>
 -Simular a Impressão dos Items <br>
 -Melhorar Front-end para telas de PC(projeto foi desenvolvido para rodar em telas de celular e tablets) <br>
