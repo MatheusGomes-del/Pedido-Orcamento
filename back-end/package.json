@@ -3,7 +3,6 @@
   "version": "1.0.0",
   "description": "",
   "main": "./src/api/server.js",
-  "type": "commonjs",
   "scripts": {
     "test": "mocha test/**/*.test.js --exit",
     "dev": "nodemon ."
@@ -19,8 +18,8 @@
   },
   "devDependencies": {
     "@types/chai-http": "^4.2.4",
-    "chai": "^4.3.0",
-    "chai-http": "^0.2.0",
+    "chai": "^4.3.4",
+    "chai-http": "^4.3.0",
     "mocha": "^10.7.3",
     "nodemon": "^3.1.7",
     "sinon": "^19.0.2"
